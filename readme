@@ -1,0 +1,48 @@
+========================================
+==========Description of Files==========
+========================================
+
+/-----factorization.py-----/
+
+Takes an input 'k' and produces the Prime-Factorization in the form of 
+a list, excluding the number one and the given number. 'j' in this file
+is a counter for the 'j'th prime number. If you like this in a pretty print
+format I have made a for loop inside "numlist_prime.py" which turns the list
+into "a * b * c" etc...
+
+The algorithm for this file was also developed by Michael Yanovich. I have
+thoroughly commented this file to explain my algorithm and how it works.
+
+/-----generateprimes.py-----/
+
+This program generates the 'n'th prime number. At the moment it is using
+a very inefficient method to find the 'n'th prime number. It is basically
+counting each prime number from the first prime number until it arrives at
+the prime number the user has request. It would most likely be optimal to
+implement the pi function (more information here:
+http://en.wikipedia.org/wiki/Prime_counting_function ). 
+
+/-----Is_Prime.py-----/
+
+Takes a given number 'p' and determines whether or not it is prime. 
+It uses an algorithm that I ( Michael Yanovich ) developed to
+determine whether or not a number is prime. 
+
+/-----list_of_primes.py-----/
+
+It generates a 'list' of prime number up to the given inputted number.
+This file imports Is_Prime
+
+/-----numlist_prime.py-----/
+
+It generates the prime factorization into a pretty print format
+and also displays the number it is displaying the factorization for.
+It displays all the numbers up to the number inputted.
+
+----------------------------------------
+------------------NOTE------------------
+----------------------------------------
+
+There are more files than listed above, however I have not mentioned those
+files because they are used in trying to derive to conclude better formulas
+for the above files.
