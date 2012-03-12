@@ -1,6 +1,9 @@
-#!/usr/local/bin/python
+#!/usr/bin/env python
 
 import generateprimes
+import sys
+
+sys.setrecursionlimit(999999)
 
 listofprimefactors=[]
 def f(k,j):

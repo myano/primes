@@ -19,8 +19,7 @@ def Is_Prime(p):
     elif p % 2 == 0:
         return False
     elif p >= 9:
-        if x % 2 == 0:
-            x += 1
+        if x % 2 == 0: x += 1
         while x >= 3:
             if p % x == 0 or p % a == 0: return False
             x -= 2
@@ -32,7 +31,7 @@ if __name__ == '__main__':
     #num=raw_input("What number do you want to test? (To see if it is a prime?): ")
     num=1746860020068409
     #num=982451653
-    num=int(num)
+    #num=int(num)
     if Is_Prime(num) == True:
         print "The number, ", num, " is a prime number!"
     else:
