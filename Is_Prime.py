@@ -29,8 +29,8 @@ def Is_Prime(p):
 if __name__ == '__main__':
     #print getattr(Is_Prime,'__doc__')
     #num=raw_input("What number do you want to test? (To see if it is a prime?): ")
-    num=1746860020068409
-    #num=982451653
+    #num=1746860020068409
+    num=982451653
     #num=int(num)
     if Is_Prime(num) == True:
         print "The number, ", num, " is a prime number!"

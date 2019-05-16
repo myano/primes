@@ -1,4 +1,4 @@
-#!/usr/local/bin/python
+#!/usr/bin/env python
 
 import Is_Prime
 import math
@@ -6,8 +6,7 @@ import math
 def genprime(p):
         '''Take incoming number 'p' and find the (p)th prime number'''
         j=1
-        j=int(j) #makes sure j is of type Integer and not a string
-	
+        p=int(p) #makes sure j is of type Integer and not a string
 	highbound=0
 
 	if p <= 9:
@@ -15,7 +14,7 @@ def genprime(p):
 	else:
 		#calculate a reasonable "higestvalue"
 		ln_n=(math.log(p))
-		ln_n_n=(math.log(ln_n))	
+		ln_n_n=(math.log(ln_n))
 
 		f1=p*ln_n
 		g1=p*ln_n_n
@@ -25,7 +24,11 @@ def genprime(p):
 		#print "highbound:", highbound
 
 	# find the nth prime number...
-        for eachnum in range(2, highbound):
+        if p >= 5:
+            m = p
+        else:
+            m = 2
+        for eachnum in range(m, highbound):
                 if Is_Prime.Is_Prime(eachnum)==True:
                         if j==p:
                                 return eachnum
@@ -34,6 +37,7 @@ def genprime(p):
 			j+=1
 
 if __name__ == '__main__':
-	usernum=raw_input("Please enter the (n)th prime number you want: ")
+	#usernum=raw_input("Please enter the (n)th prime number you want: ")
+        usernum = 34783
 	usernum=int(usernum)
 	print genprime(usernum)	
