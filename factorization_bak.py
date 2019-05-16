@@ -27,15 +27,15 @@ def f(k,j):
         else:
                 f(k,j+1)
 
-	listofprimefactors=str(listofprimefactors)
+    listofprimefactors=str(listofprimefactors)
         return listofprimefactors
 
 if __name__ == '__main__':
-	print "This program will provide the prime-factorization of a given number. It will then put the prime-factorization into a list and display it."
-	print ""
-	print ""
-	usernum=raw_input("What number would you like the prime-factorization of? ")
+    print "This program will provide the prime-factorization of a given number. It will then put the prime-factorization into a list and display it."
+    print ""
+    print ""
+    usernum=raw_input("What number would you like the prime-factorization of? ")
         #usernum=1746860020068409
-	usernum=int(usernum)
-	qq=2
+    usernum=int(usernum)
+    qq=2
         print str(usernum) + " factorization is: " + str(f(usernum,qq))
